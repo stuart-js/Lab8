@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomListTest {
 
@@ -30,6 +31,8 @@ public class CustomListTest {
     }
 
     public void hasCityTest(){
+        list = MockCityList();
+        assertEquals(list.hasCity(list), false);
 
     }
 
